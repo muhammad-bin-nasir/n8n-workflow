@@ -3,3 +3,15 @@ services:
     name: n8n
     env: docker
     plan: free
+    port: 5678
+    envVars:
+      - key: N8N_PORT
+        value: 5678
+      - key: N8N_PROTOCOL
+        value: https
+      - key: N8N_HOST
+        value: rozgar-n8n.onrender.com
+      - key: WEBHOOK_URL
+        value: https://rozgar-n8n.onrender.com/
+      - key: N8N_SECURE_COOKIE
+        value: false
